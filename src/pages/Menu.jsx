@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
+  const [status, setStatus] = useState("");
 
   const getMenuData = () => {
     axios
