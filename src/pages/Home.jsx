@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,8 +12,7 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <Navbar />
+    <Layout>
       {access_token ? (
         <button onClick={logout}>Logout</button>
       ) : (
@@ -22,7 +22,7 @@ const Home = () => {
       )}
 
       <h1>ini home page</h1>
-    </div>
+    </Layout>
   );
 };
 
