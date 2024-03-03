@@ -3,6 +3,7 @@ import Menu from "../pages/Menu";
 import MenuDetail from "../pages/MenuDetail";
 import Login from "../pages/Login";
 import ProtectedRoute from "./ProtectedRoute";
+import AddMenu from "../pages/AddMenu";
 
 export const routeList = [
   {
@@ -22,6 +23,14 @@ export const routeList = [
     element: (
       <ProtectedRoute>
         <MenuDetail />
+      </ProtectedRoute>
+    ),
+  },
+  {
+    path: "/add-menu",
+    element: (
+      <ProtectedRoute>
+        <AddMenu />
       </ProtectedRoute>
     ),
   },
